@@ -1,0 +1,89 @@
+ #accordion input[name=accordion-level-1]:not(:checked) + div { display: none; }
+        #accordion input[name=accordion-level-1]:checked + div { display: block; }
+        #accordion input[name=accordion-level-1]:hover + div { display: block; }
+        #accordion input[name=accordion-level-1] { width: 0px; height: 0px; margin: 0px; opacity: 0.0; }
+        #accordion label { 
+		cursor: pointer;
+	}
+	#accordion li:hover { 
+		background-color:white;
+		color:rgb(210,210,210);
+	}	
+	ul {
+		margin: 0;
+    		padding: 0;
+	}
+#accordion div h4{
+	text-indent: 0 !important;
+}
+	.container {
+		position: relative;
+	}
+	#accordion li { 
+		font-family: sans-serif;
+    		font-size: 12px;
+	}
+	#accordion div {
+		color: rgb(210,210,210);
+	}
+	#accordion div h4{
+		color: black;
+	}
+	@media only screen and (min-width: 769px) {
+	#accordion div {
+		position: absolute;
+    		width: 100%;
+    		left: 0;
+    		right: 0;
+		top: 37px;
+		padding:10px;
+	}
+	#accordion li {
+		background-color: rgb(226,226,226);
+		color: black;
+		border-right:white;
+		padding: 10px;
+		margin:0;
+		display:inline-block;
+		float:left;
+	}
+	#accordion li{ 
+		border-right: 1px solid white;
+	}
+	}		
+@media only screen and (max-width: 768px) {
+	#accordion li {
+		width:100%;
+		background-color: rgb(226,226,226);
+		color: black;
+		border-right:white;
+		margin:0;
+		display:inline-block;
+		float:left;
+		padding: 10px 0 10px 0;
+    		text-indent: 6px;
+	}
+	
+	#accordion div {
+    		border: 1px solid;
+    		width: 100%;
+	}
+	#accordion li div{
+		background-color: white !important;
+		color: black;
+		border:0;
+		padding: 0 0 0 10px;
+		margin:0;
+		display:inline-block;
+	}
+	#accordion li{ 
+		border-bottom:1px solid white;
+	}
+	#accordion label {
+		width: 80%;
+    		display: inline-block;
+	}
+	body {
+		margin:0;
+	}
+}
